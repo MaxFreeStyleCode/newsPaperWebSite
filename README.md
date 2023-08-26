@@ -1,8 +1,10 @@
 # Introduction
 <p>
-Pour utiliser ce projet, je vous conseille de cliquer sur le bouton code et ensuite télecharger le zip du projet en fonction de l'étape dans laquel vous vous trouvez. 
+Pour utiliser ce projet, je vous conseille de cliquer sur le bouton code et ensuite télecharger le zip du projet en fonction de l'étape dans laquel vous vous trouvez. Par exemple, si vous venez de commencer la vidéo, aller sur la branche << projet-initialisation>> et telecharger le zip comme dans les images :
 
-![Exemple de télechargement](README/deploiement.svg)
+![Changement de branches](README/changeBranch.jpg)
+
+![Exemple de télechargement](README/downloadZip.jpg)
 </p>
 
 # Texte utilisé tout au long de la vidéo

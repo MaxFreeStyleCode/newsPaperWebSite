@@ -2,128 +2,128 @@
 
 # Introduction
 <p>
-Pour utiliser ce projet, je vous conseille de cliquer sur le bouton code et ensuite télecharger le zip du projet en fonction de l'étape dans laquel vous vous trouvez. Par exemple, si vous venez de commencer la vidéo, aller sur la branche << projet-initialisation>> et telecharger le zip comme dans les images :
+To use this project, I advise you to click on the code button and then download the project zip depending on the stage you are in. For example, if you have just started the video, go to the << project-initialization >> branch and download the zip as in the images :
 
-![Changement de branches](README/changeBranch.jpg)
+![Change of branches](README/changeBranch.jpg)
 
-![Exemple de télechargement](README/downloadZip.jpg)
+![Download example](README/downloadZip.jpg)
 </p>
 
-# Texte utilisé tout au long de la vidéo
+# Text used throughout the video
 
-<p>Vous retrouverez ci-dessous les textes pour les différentes parties du sites web.</p>
+<p>Below you will find the texts for the different parts of the websites.</p>
 
-## Dans la présentation des slides
+## In the slide presentation
 
 Slide 1
 
-    Titre du poste : It's Not Just the Passing of a Queen
+    Post Title : It's Not Just the Passing of a Queen
     Date : JAN 5
     Type 1 : LIFESTYLE
     Type 2 : FRENIFY
 
 Slide 2
 
-    Titre du poste : Becoming the Glue of a family
+    Post Title : Becoming the Glue of a family
     Date : JAN 4
     Type 1 : FOOD
     Type 2 : FRENIFY
 
 Slide 3
 
-    Titre du poste : The-Data Informed Manifesto
+    Post Title : The-Data Informed Manifesto
     Date : JAN 4
     Type 1 : FASHION
     Type 2 : FRENIFY
 
 Slide 4
 
-    Titre du poste : Every Day is a Trip
+    Post Title : Every Day is a Trip
     Date : JAN 4
     Type 1 : FASHION
     Type 2 : FRENIFY
 
-## Dans la présentation des petits articles
+## In the presentation of small post
 
 <p>
-Ca sera le même paragraphe pour tous les posts : It's remarkable to watch a five-year-old draw, void of any anxiety about what the world will think. We all start our lives creatively confident, happy to create and share our work with pride. And then, as we age, our comfort with creative expression declines.
+It will be the same paragraph for all posts: It's remarkable to watch a five-year-old draw, void of any anxiety about what the world will think. We all start our lives creatively confident, happy to create and share our work with pride. And then, as we age, our comfort with creative expression declines.
 </p>
 
 Post 1
 
-    Titre du poste : How I kept My Sense of Humor
+    Post Title : How I kept My Sense of Humor
     Image : pop.webp
     Date : JAN 5  
     Type 1 : FOOD
     Type 2 : FRENIFY
-    Nombre de vues : 2.7K
+    Views : 2.7K
 
 Post 2
 
-    Titre du poste : Leaving San Francisco
+    Post Title : Leaving San Francisco
     Image : catGlass.webp
     Date : JAN 5  
     Type 1 : TRAVEL
     Type 2 : FRENIFY
-    Nombre de vues : 2.5K
+    Views : 2.5K
 
 Post 3
 
-    Titre du poste : What Marriage Means to Me
+    Post Title : What Marriage Means to Me
     Image : woman-mariage.webp
     Date : JAN 5  
     Type 1 : LIFESTYLE
     Type 2 : FRENIFY
-    Nombre de vues : 1.7K
+    Views : 1.7K
 
 Post 4
 
-    Titre du poste : Do You Need to Change Yourself
+    Post Title : Do You Need to Change Yourself
     Image : halloween.webp
     Date : JAN 5  
     Type 1 : TRAVEL
     Type 2 : FRENIFY
-    Nombre de vues : 768
+    Views : 768
 
 Post 5
 
-    Titre du poste : A Love Letter to Los Angeles
+    Post Title : A Love Letter to Los Angeles
     Image : bicycle.webp
     Date : JAN 5  
     Type 1 : TRAVEL
     Type 2 : FRENIFY
-    Nombre de vues : 1.1K
+    Views : 1.1K
 
 Post 6
 
-    Titre du poste : Famous Works of Literature
+    Post Title : Famous Works of Literature
     Image : interior.webp
     Date : JAN 5  
     Type 1 : TRAVEL
     Type 2 : FRENIFY
-    Nombre de vues : 532
+    Views : 532
 
 Post 7
 
-    Titre du poste : Don't Be in the moment
+    Post Title : Don't Be in the moment
     Image : pizza.webp
     Date : JAN 5  
     Type 1 : LIFESTYLE
     Type 2 : FRENIFY
-    Nombre de vues : 538
+    Views : 538
 
 Post 8
 
-    Titre du poste : The Greatest Life Hacks
+    Post Title : The Greatest Life Hacks
     Image : catWinter.webp
     Date : JAN 5  
     Type 1 : LIFESTYLE
     Type 2 : FRENIFY
-    Nombre de vues : 757
+    Views : 757
 
-## Dans la présentation de l'article de san-franscico
+## In the presentation of the san-franscico article
 
-Voici la liste de tous les paragraphes de cet article :
+Here is the list of all the paragraphs in this article :
 
 - It's remarkable to watch a five-year-old draw, void of any anxiety about what the world will think. We all start our lives creatively confident, happy to create and share our work with pride. And then, as we age, our comfort with creative expression declines. We’re discouraged by the learning curve of creative skills and tools, by our tendency to compare ourselves to others, and by the harsh opinions of critics. As Picasso famously quipped, “All children are born artists, the problem is to remain an artist as we grow up.” It is a sad irony: As we age, our creative capabilities (and opportunities!) grow as we collect life experiences that inspire us — but our creative confidence shrinks. We are more creatively confident in kindergarten than we are as adults. Correcting this is among the greatest opportunities for the next generation of humankind.
 
@@ -131,7 +131,7 @@ Voici la liste de tous les paragraphes de cet article :
 
 - People from communities of color are underrepresented in publishing. Our books make up less than six percent of the titles released each year, and that's despite a century of fighting against the gatekeepers. The results of this systematic exclusion are clear: we are also elided from the national conversation, starting in elementary school. Those who live in this country are trained by textbooks, libraries, classrooms, TV, and cinema to see US life as almost exclusively white.
 
-- Titre : The Death of Creativity's Learning Curve
+- Title : The Death of Creativity's Learning Curve
   
 - Image : halloween.webp
   

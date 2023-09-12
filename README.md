@@ -1,3 +1,5 @@
+![Presentation of the video](README/newspaperWebSiteResize.png)
+
 # Introduction
 <p>
 Pour utiliser ce projet, je vous conseille de cliquer sur le bouton code et ensuite télecharger le zip du projet en fonction de l'étape dans laquel vous vous trouvez. Par exemple, si vous venez de commencer la vidéo, aller sur la branche << projet-initialisation>> et telecharger le zip comme dans les images :

@@ -5,3 +5,144 @@ $vividYellowColor: #FFCC00;
 $vividBeigeColor: #FFEEAF;
 $grayColor:#ebe9eb;
 $cyanColor: #abb8c3;
+
+*,
+*::after,
+*::before {
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: $clearBeigeColor;
+    font-size: 19px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.2s;
+}
+
+
+.center_sect{
+    width: 1360px;
+}
+
+.head_sect{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    .head_top{
+        margin-top: 70px;
+    }
+
+    svg{
+        margin-top: 30px;
+        margin-left: 35px;
+        width: 400px;
+    }
+
+    nav{
+        margin-top: 40px;
+    }
+
+    
+}
+
+.wing_left, .wing_right{
+    
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        height: 60px;
+        width: 4px;
+        background-color: black;
+        top:0px;
+    }
+
+    &::after{
+        height: 40px;
+    }
+}
+
+.wing_left{
+    &::before{
+        left:0px;
+    }
+
+    &::after{
+        left:15px;
+    }
+    
+}
+
+.wing_right{
+    &::before{
+        right:0px;
+    }
+
+    &::after{
+        right:15px;
+    }
+    
+}
+
+.head_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .shaded_title{
+        margin: 0px 55px 5px 55px;
+    }
+}
+
+.social{
+    display: flex;
+    
+    i{
+        margin: 0px 7px;
+        font-size: 24px;
+        transition: color 0.2s;
+
+        &:hover{
+            color:$vividRedColor;
+            cursor: pointer;
+        }
+    }
+}
+
+.shaded_title{
+    position: relative;
+
+    h1{
+        >a{
+            color:$vividRedColor;
+            font-size: 52px;
+            text-shadow: 0px 5px 0px black, 0px 6px 0px black, 0px 8px 0px black;
+        }
+        
+    }    
+}
+
+.search_sect{
+    span{
+        font-weight: 900;
+        letter-spacing: 1px;
+
+        i{
+           margin-left: 3px; 
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}

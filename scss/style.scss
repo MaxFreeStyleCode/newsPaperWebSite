@@ -29,6 +29,104 @@ a{
     transition: color 0.2s;
 }
 
+.back_search_sect{
+    display: flex;
+    position: fixed;
+    width:100vw;
+    height: 100vh;
+    background-color: $clearBeigeColor;
+    top:0px;
+    left:0px;
+    z-index: 50;
+    transform: translateY(-110vh);
+    transition: transform 0.3s;
+
+    >div{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >i{
+            position: absolute;
+            font-size: 35px;
+            top: 50px;
+            right: 70px;
+            transition: color 0.2s;
+
+            &:hover{
+                color:$vividRedColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.input-search{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    >div{
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        border:  4px solid black;
+        background-color: $grayColor;
+        overflow: hidden;
+        height:70px;
+        width: 100%;
+        max-width: 1200px;
+        >input{
+            width: 80%;
+            padding:0px 15px;
+            border:none;
+            background: none;
+            font-weight: 900;
+            font-size: 18px;
+            color:$cyanColor;
+
+            &:focus{
+                font-weight: 900;
+                font-size: 18px;
+                color:black;
+                outline: none;
+                border: none;
+            }
+        }
+
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 75px;
+            left:5px;
+            border:  4px solid black;
+            border-radius: 50px;
+            border-right: none;
+            background-color: $vividYellowColor;
+            transition: background-color 0.2s;
+            >span{
+                display: flex;
+                align-items: center;
+
+                >i{
+                    margin-left: 10px;
+                    margin-top: 2px;
+                }
+            }
+
+            &:hover{
+                background-color: white;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
 
 .center_sect{
     width: 1360px;

@@ -3,13 +3,15 @@ let subCategoriesMainMenuAppear = false;
 let subPostStylesHiddenMenuAppear = false;
 let subCategoriesHiddenMenuAppear = false;
 let hiddenMenuAppear = false;
+let responsiveMenuBodyAppear = false;
+let subPostStylesMenuAppear = false;
+let subCategoriesMenuAppear = false;
+let responsiveMenuBodyHeight = "280px";
 
 let butDisplaySearchInputs = document.getElementsByClassName("search_sect");
 let backSearchSect = document.getElementById("back_search_sect");
 let closeBackSearchSect = document.getElementById("close_back_search_sect");
-let responsiveHeaderSearch = document.getElementById(
-  "responsive_header_search"
-);
+
 let displaySubPostStylesMainMenu = document.getElementById(
   "display_sub_post_styles_main_menu"
 );
@@ -32,6 +34,20 @@ let subPostStylesHiddenMenu = document.getElementById(
 );
 let subCategoriesHiddenMenu = document.getElementById(
   "sub_categories_hidden_menu"
+);
+
+let responsiveHeaderSearch = document.getElementById(
+  "responsive_header_search"
+);
+let displayResponsiveMenu = document.getElementById("display_responsive_menu");
+let responsiveMenuBody = document.getElementById("responsive_menu_body");
+let subPostStylesMenu = document.getElementById("sub_post_styles_menu");
+let subCategoriesMenu = document.getElementById("sub_categories_menu");
+let displaySubPostStylesMenu = document.getElementById(
+  "display_sub_post_styles_menu"
+);
+let displaySubCategoriesMenu = document.getElementById(
+  "display_sub_categories_menu"
 );
 
 for (let i = 0; i < butDisplaySearchInputs.length; i++) {
@@ -119,4 +135,50 @@ document.addEventListener("scroll", (e) => {
       hiddenMenu.style.transform = "translateY(-400px)";
     }
   }
+});
+
+responsiveHeaderSearch.addEventListener("click", () => {
+  backSearchSect.style.transform = "translateY(0vh)";
+});
+
+displayResponsiveMenu.addEventListener("click", () => {
+  if (!responsiveMenuBodyAppear) {
+    responsiveMenuBody.style.height = responsiveMenuBodyHeight;
+  } else {
+    responsiveMenuBody.style.height = "0px";
+  }
+
+  responsiveMenuBodyAppear = !responsiveMenuBodyAppear;
+});
+
+displaySubPostStylesMenu.addEventListener("click", () => {
+  if (!subPostStylesMenuAppear) {
+    displaySubPostStylesMenu.setAttribute("class", "actif");
+    subPostStylesMenu.style.height = "220px";
+    responsiveMenuBodyHeight =
+      "calc(" + getComputedStyle(responsiveMenuBody).height + " + 220px)";
+  } else {
+    displaySubPostStylesMenu.setAttribute("class", "");
+    responsiveMenuBodyHeight =
+      "calc(" + getComputedStyle(responsiveMenuBody).height + " - 220px)";
+    subPostStylesMenu.style.height = "0px";
+  }
+  responsiveMenuBody.style.height = responsiveMenuBodyHeight;
+  subPostStylesMenuAppear = !subPostStylesMenuAppear;
+});
+
+displaySubCategoriesMenu.addEventListener("click", () => {
+  if (!subCategoriesMenuAppear) {
+    displaySubCategoriesMenu.setAttribute("class", "actif");
+    subCategoriesMenu.style.height = "258px";
+    responsiveMenuBodyHeight =
+      "calc(" + getComputedStyle(responsiveMenuBody).height + " + 258px)";
+  } else {
+    displaySubCategoriesMenu.setAttribute("class", "");
+    responsiveMenuBodyHeight =
+      "calc(" + getComputedStyle(responsiveMenuBody).height + " - 258px)";
+    subCategoriesMenu.style.height = "0px";
+  }
+  responsiveMenuBody.style.height = responsiveMenuBodyHeight;
+  subCategoriesMenuAppear = !subCategoriesMenuAppear;
 });

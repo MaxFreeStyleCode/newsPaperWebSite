@@ -110,4 +110,13 @@ a {
 }
 .search_sect:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .head_sect {
+    display: none;
+  }
+  .center_sect {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

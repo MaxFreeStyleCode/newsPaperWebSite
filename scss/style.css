@@ -528,7 +528,7 @@ a {
   align-items: start;
 }
 
-.slim_post {
+.slim_post, .post {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -572,23 +572,23 @@ a {
   font-size: 12px;
 }
 
-.slim_post_body {
+.slim_post_body, .post_body {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
 }
-.slim_post_body > h2 {
+.slim_post_body > h2, .post_body > h2 {
   max-width: 86%;
 }
-.slim_post_body > h3 {
+.slim_post_body > h3, .post_body > h3 {
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 19px;
   margin: 18px 0px;
 }
-.slim_post_body > p {
+.slim_post_body > p, .post_body > p {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   font-size: 17px;
@@ -601,7 +601,7 @@ a {
   max-width: 88%;
 }
 
-.slim_post_image {
+.slim_post_image, .post_image {
   display: inline-block;
   width: 85%;
   margin-top: 30px;
@@ -666,6 +666,65 @@ a {
 }
 .option_view_post > div::after {
   right: -65px;
+}
+
+.post_sect {
+  display: flex;
+  margin-top: 90px;
+}
+
+.post {
+  width: 100%;
+}
+
+.post_image {
+  width: 95%;
+}
+
+.post_body > div.post_quick_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.post_body p {
+  max-width: 92%;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  text-align: start;
+  font-weight: normal;
+  line-height: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  font-size: 17px;
+}
+.post_body > div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 92%;
+}
+.post_body > div > h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.post_body > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.post_body > div > div > img {
+  width: 340px;
+  height: 450px;
+}
+.post_body > div > div > div {
+  margin-left: 25px;
+}
+.post_body > div > div > div p {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -744,5 +803,16 @@ a {
   .slide_presentation > .info_present {
     width: 90%;
     left: 5%;
+  }
+  .post_body > div > div {
+    flex-direction: column;
+  }
+  .post_body > div > div > img {
+    width: 85%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .post_body > div > div > div {
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

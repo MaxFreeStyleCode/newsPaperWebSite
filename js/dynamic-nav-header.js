@@ -28,10 +28,6 @@ closeBackSearchSect.addEventListener("click", () => {
   backSearchSect.style.transform = "translateY(-110vh)";
 });
 
-responsiveHeaderSearch.addEventListener("click", () => {
-  backSearchSect.style.transform = "translateY(0vh)";
-});
-
 function closeAllSubMenu() {
   subPostStylesMainMenuAppear = false;
   subCategoriesMainMenuAppear = false;

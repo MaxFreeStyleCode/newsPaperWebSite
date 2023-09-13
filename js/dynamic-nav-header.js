@@ -14,7 +14,3 @@ for (let i = 0; i < butDisplaySearchInputs.length; i++) {
 closeBackSearchSect.addEventListener("click", () => {
   backSearchSect.style.transform = "translateY(-110vh)";
 });
-
-responsiveHeaderSearch.addEventListener("click", () => {
-  backSearchSect.style.transform = "translateY(0vh)";
-});

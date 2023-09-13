@@ -14,6 +14,7 @@ body {
   background-color: #FFF5CF;
   font-size: 19px;
   font-family: "Fira Sans", sans-serif;
+  height: 2000px;
 }
 
 a {
@@ -202,7 +203,7 @@ a {
   cursor: pointer;
 }
 
-.main_menu {
+.main_menu, .hidden_menu {
   display: flex;
   position: relative;
   background-color: white;
@@ -213,25 +214,25 @@ a {
   font-weight: 900;
   letter-spacing: 1px;
 }
-.main_menu ul {
+.main_menu ul, .hidden_menu ul {
   list-style: none;
 }
-.main_menu .list_menu {
+.main_menu .list_menu, .hidden_menu .list_menu {
   display: flex;
   margin: 0px 40px;
 }
-.main_menu .list_menu > li {
+.main_menu .list_menu > li, .hidden_menu .list_menu > li {
   display: flex;
   position: relative;
 }
-.main_menu .list_menu > li > a {
+.main_menu .list_menu > li > a, .hidden_menu .list_menu > li > a {
   padding: 20px;
 }
-.main_menu .list_menu > li > a > i {
+.main_menu .list_menu > li > a > i, .hidden_menu .list_menu > li > a > i {
   margin-bottom: 3px;
   margin-left: 3px;
 }
-.main_menu .list_menu > li > ul {
+.main_menu .list_menu > li > ul, .hidden_menu .list_menu > li > ul {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -248,21 +249,21 @@ a {
   transition: opacity 1s, transform 0.3s;
   z-index: 40;
 }
-.main_menu .list_menu > li > ul > li {
+.main_menu .list_menu > li > ul > li, .hidden_menu .list_menu > li > ul > li {
   display: flex;
 }
-.main_menu .list_menu > li > ul > li > a {
+.main_menu .list_menu > li > ul > li > a, .hidden_menu .list_menu > li > ul > li > a {
   width: 250px;
   height: 35px;
 }
-.main_menu .list_menu > li > ul > li > a > span {
+.main_menu .list_menu > li > ul > li > a > span, .hidden_menu .list_menu > li > ul > li > a > span {
   margin-left: 40px;
 }
-.main_menu li:hover > a {
+.main_menu li:hover > a, .hidden_menu li:hover > a {
   color: #f16363;
   cursor: pointer;
 }
-.main_menu::before, .main_menu::after {
+.main_menu::before, .main_menu::after, .hidden_menu::before, .hidden_menu::after {
   content: "";
   height: 4px;
   width: 20px;
@@ -270,15 +271,32 @@ a {
   position: absolute;
   top: calc(50% - 2px);
 }
-.main_menu::before {
+.main_menu::before, .hidden_menu::before {
   left: 0px;
 }
-.main_menu::after {
+.main_menu::after, .hidden_menu::after {
   right: 0px;
 }
 
+.hidden_menu {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  z-index: 45;
+  border-radius: 0px;
+  justify-content: center;
+  transform: translateY(-400px);
+  transition: transform 0.3s;
+}
+.hidden_menu > div {
+  width: 1360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1000px) {
-  .head_sect {
+  .head_sect, .hidden_menu {
     display: none;
   }
   .center_sect {

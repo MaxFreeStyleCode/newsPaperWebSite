@@ -21,6 +21,7 @@ body{
     background-color: $clearBeigeColor;
     font-size: 19px;
     font-family: 'Fira Sans', sans-serif;
+    height: 2000px;
 }
 
 a{
@@ -245,7 +246,7 @@ a{
     }
 }
 
-.main_menu{
+.main_menu, .hidden_menu{
     display: flex;
     position: relative;
     background-color: white;
@@ -337,10 +338,27 @@ a{
 
 }
 
+.hidden_menu{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 45;
+    border-radius: 0px;
+    justify-content: center;
+    transform: translateY(-400px);
+    transition: transform 0.3s;
+    >div{
+        width: 1360px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 
 @media only screen and (max-width:1000px){
     
-    .head_sect{
+    .head_sect, .hidden_menu{
         display: none;
     }
 

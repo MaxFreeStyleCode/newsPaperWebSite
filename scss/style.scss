@@ -354,11 +354,121 @@ a{
     }
 }
 
+.responsive_menu_header{
+    display: none;
+    position: fixed;
+    width: 100%;
+    border-bottom:  4px solid black;
+    z-index: 40;
+}
+
+.responsive_header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+
+    >.shaded_title{
+        >h1{
+            a{
+                font-size: 45px;    
+            }
+        }
+    }
+
+    >div{
+        >i{
+            font-size: 30px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        >i:nth-last-child(1){
+            margin-left: 15px;
+        }
+    }
+    
+}
+
+.responsive_menu{
+    display: flex;
+    flex-direction: column;
+
+    >div{
+        height:0px;
+        overflow: hidden;
+        transition: height 0.3s;
+        background-color: white;
+        ul{
+            width: 100%;
+
+            >li{
+                width: 100%;
+                >a{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding:10px;
+                    transition: color 0.3s, background-color 0.3s;
+                    >i:nth-child(3){
+                        display: none;
+                    }
+
+                    &:hover{
+                        color:white;
+                        background-color: black;
+                        cursor: pointer;
+                    }
+                }
+                >div{
+                    width: 100%;
+                    height:0px;
+                    overflow: hidden;
+                    transition: height 0.3s; 
+
+                    >ul{
+                        background-color: black;
+                        >li{
+                            >a{
+                                padding-left: 25px;
+                                color: white;
+
+                                &:hover{
+                                    color:black;
+                                    background-color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            >li{
+                a.actif{
+                    >i:nth-child(2){
+                        display: none;
+                    }
+                    >i:nth-child(3){
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    
+}
 
 @media only screen and (max-width:1000px){
     
     .head_sect, .hidden_menu{
         display: none;
+    }
+
+    .responsive_menu_header{
+        display: block;
     }
 
     .center_sect{

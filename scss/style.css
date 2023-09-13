@@ -378,6 +378,17 @@ a {
   display: inline-block;
 }
 
+.black_social_container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background-color: black;
+  color: white;
+}
+.black_social_container > .social i {
+  margin: 0px 15px;
+}
+
 @media only screen and (max-width: 1000px) {
   .head_sect, .hidden_menu {
     display: none;

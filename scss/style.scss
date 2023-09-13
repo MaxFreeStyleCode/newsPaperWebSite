@@ -245,6 +245,98 @@ a{
     }
 }
 
+.main_menu{
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 50px;
+    border:  4px solid black;
+    border-bottom: 10px solid black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    ul{
+        list-style: none;
+    }
+
+    .list_menu{
+        display: flex;
+        margin: 0px 40px;
+        
+        >li{
+            display: flex;
+            position: relative;
+            >a{
+                padding: 20px;
+                >i {
+                    margin-bottom: 3px;
+                    margin-left: 3px;
+                }
+            }
+
+            >ul{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                background-color: white;
+                padding: 30px 0px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border:  4px solid black;
+                border-bottom: 10px solid black;
+                top:100%;
+                left:-20px;
+                opacity: 0;
+                transform: translateY(-700px);
+                transition: opacity 1s, transform 0.3s;
+                z-index: 40;
+
+                >li{
+                    display:flex;
+                    
+                    >a{
+                        width:250px;
+                        height: 35px;
+                        >span{
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    li{
+        &:hover{
+            >a{
+                color: $vividRedColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &::before, &::after{
+        content: '';
+        height: 4px;
+        width: 20px;
+        background-color: black;
+        position: absolute;
+        top: calc(50% - 2px);
+    }
+
+    &::before{
+        left: 0px;
+    }
+
+    &::after{
+        right: 0px;
+    }
+
+
+}
+
 
 @media only screen and (max-width:1000px){
     
